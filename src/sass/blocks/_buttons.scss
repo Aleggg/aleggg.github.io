@@ -3,4 +3,27 @@
     height: 45px;
     background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.btn_noborder {
+    position: relative;
+    &:hover {
+        color: #fff;
+        transition: all .3s ease-out; // smooth transition
+        padding-right: 12px;
+        &:after {
+            content: " "; 
+            width: 100%; // full width underline
+            height: 1px; // because it's a 1px tall line
+            background: #fff; // color variable
+            position: absolute; // this gives us the ability to position in within its relative container
+            right: 0; // when we change the width it will go where it's anchored, so we set it on the right 
+            bottom: 0; // because it's on the bottom
+            transition: all .2s ease-out; // smooth transition
+        }
+    }
 }
