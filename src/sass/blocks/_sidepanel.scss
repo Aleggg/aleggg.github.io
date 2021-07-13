@@ -9,6 +9,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    &__link {
+        svg path {
+            transition: 0.5s all;
+        }
+        &:hover {
+            svg path {
+                fill:$main-color;
+            }
+        }
+    }
     &__divider {
         width: 2px;
         height: 70px;
