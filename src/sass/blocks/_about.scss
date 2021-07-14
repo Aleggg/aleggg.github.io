@@ -1,0 +1,63 @@
+.about {
+    padding-top: 120px;
+    min-height: 600px;
+    &__wrapper {
+        display: flex;
+    }
+    &__title {
+        position: relative;
+        z-index: 2;
+        color: black;
+        @include before_circle;
+    }
+    &__subtitle {
+        color: black;
+    }
+    &__photo {
+        //height: 400px;
+        width: 400px;
+        img {
+            width: 100%;
+        }
+    }
+    &__descr {
+        margin-left: 68px;
+        padding-right: 100px;
+        width: 570px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    .divider {
+        margin-top: 4px;
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main-color;
+    }
+    &__skills {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        .title {
+            color: #111;
+        }
+        &-item {
+            width: 245px;
+            display: flex;
+        }
+        &-descr {
+            margin-left: 20px;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    
+}
