@@ -15,6 +15,7 @@
     width: 1140px;
 }
 .divider {
+    margin: 25px auto 0 auto;
     margin-top: 25px;
     width: 60px;
     height: 3px;
@@ -27,3 +28,4 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';

@@ -3,6 +3,9 @@
     padding-top: 205px;
     display: relative;
     background: url('../img/bg3.jpg') no-repeat 50%/cover;
+    .title {
+        color: #fff;
+    }
     &__title {
         margin-top: 10px;
         width: 535px;
@@ -26,6 +29,7 @@
         position: relative;
         padding-left: 10px;
         z-index: 2;
+        color: #fff;
         @include before_circle;
     }
 }
