@@ -8,13 +8,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
-
-
 .container {
     margin: 0 auto;
     width: 1140px;
+}
+.divider {
+    margin-top: 25px;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
 }
 
 @import 'blocks/promo';
