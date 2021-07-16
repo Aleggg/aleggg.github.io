@@ -1,9 +1,8 @@
 .sidepanel {
-    position: fixed;
+    position: absolute;
     z-index: 3;
     top: 230px;
     left: 30px;
-
     height: 340px;
     display: flex;
     flex-direction: column;
