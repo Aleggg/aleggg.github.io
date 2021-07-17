@@ -8,6 +8,12 @@
     .container {
         max-width: 960px;
     }
+    .resume {
+        &__wrapper {
+            padding: 40px 20px 0 20px;
+            column-gap: 80px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -15,7 +21,6 @@
         max-width: 720px;
     }
     .about {
-    
         &__photo {
             width: 300px;
             img {
@@ -23,10 +28,46 @@
             }
         }
         &__descr {
+            padding-right: 0;
             width: 400px;
         }
     }
-    
+    .resume {
+        &__wrapper {
+            column-gap: 60px;
+            grid-template-columns: repeat(2,320px);
+        }
+    }
+    .skills {
+        &__wrapper {
+            //flex-direction: column;
+            justify-content: space-around;
+            //align-items: center;
+            
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+    .contacts {
+        &__photo {
+            width: 300px;
+            img {
+                width: 100%;
+            }
+        }
+        &__descr {
+            padding-right: 0;
+            width: 400px;
+        }
+        &__textarea {
+            width: 400px;
+            height: 190px;
+        }
+        &__input {
+            margin-top: 10px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -52,10 +93,47 @@
             align-items: center;
         }
         &__descr {
+            padding-right: 0;
             margin-left: 0;
             padding: 0 10px 0 10px;
             margin-top: 40px;
-            width: 300px;
+            width: 400px;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            column-gap: 60px;
+            row-gap: 40px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__wrapper {
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__descr {
+            padding-right: 0;
+            margin-left: 0;
+            padding: 0 10px 0 10px;
+            margin-top: 40px;
+            width: 400px;
         }
     }
 }
@@ -90,9 +168,19 @@
         }
     }
     .about {
-       
         &__descr {
-           
+            padding: 10px 12px 0 8px;
+            margin-top: 40px;
+            width: 300px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 5px 0 5px;
+        }
+    }
+    .contacts {
+        &__descr {
             padding: 10px 12px 0 8px;
             margin-top: 40px;
             width: 300px;
