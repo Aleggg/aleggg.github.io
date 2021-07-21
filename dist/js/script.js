@@ -1,3 +1,4 @@
+//MENU
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     closeMenu = document.querySelector('.menu__close');
@@ -11,10 +12,27 @@ closeMenu.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
-
-
 menuLink.forEach(element => {
     element.addEventListener('click', () => {
         menu.classList.remove('active');
     });
+});
+
+// Button up
+
+const pageUp = document.querySelector('.pageup');
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        pageUp.style.display = "block";
+    } else {
+        pageUp.style.display = "none";
+    }
+  }
+
+pageUp.addEventListener('click', () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
