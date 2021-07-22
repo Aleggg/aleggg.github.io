@@ -1,3 +1,5 @@
+"use strict"
+
 //MENU
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
@@ -30,4 +32,5 @@ function scrollFunction() {
     } else {
         pageUp.style.display = "none";
     }
-  }
+}
+

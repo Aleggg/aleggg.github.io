@@ -71,6 +71,9 @@
             font-size: 12px;
             margin-bottom: 0;
         }
+        .error {
+            box-shadow: 0 0 15px red;
+        }
     }
     &__input {
         position: relative;
@@ -118,4 +121,5 @@
             margin-right: 10px;
         }
     }
+
 }
