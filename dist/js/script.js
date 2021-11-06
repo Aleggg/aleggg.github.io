@@ -3,7 +3,7 @@
 //MENU
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
-    closeMenu = document.querySelector('.menu__close');
+    closeMenu = document.querySelector('.menu__close'),
     menuLink = document.querySelectorAll('.menu__link');
 
 hamburger.addEventListener('click', () => {
